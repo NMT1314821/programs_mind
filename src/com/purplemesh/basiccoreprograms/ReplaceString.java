@@ -2,11 +2,11 @@ package com.purplemesh.basiccoreprograms;
 
 import com.purplemesh.utility.Utility;
 
-public class ReplaceString
+class Replacestr
 {
-	public static void main(String[] args) 
+	
+	public void repleceString(String str)
 	{
-		String str= "Hello <<UserName>>, How are you?";
 		System.out.println("Enter the Username");
 		String name=Utility.getNameReplace();
 		if(name.length()>3)
@@ -18,5 +18,16 @@ public class ReplaceString
 		{
 			System.out.println("The name should be at least 3 characters");
 		}
+	}
+}
+
+public class ReplaceString
+{
+	public static void main(String[] args) 
+	{
+		Replacestr s=new Replacestr();
+		String str= "Hello <<UserName>>, How are you?";
+		s.repleceString(str);
+		
 	}
 }

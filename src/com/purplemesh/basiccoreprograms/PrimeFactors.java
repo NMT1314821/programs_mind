@@ -11,9 +11,10 @@ class Factor
 			if(num%i==0 && isPrime(i))
 			{
 				System.out.println(i);
-			}
+			}	
 		}
 	}
+	
 	public static boolean isPrime(int n)
 	{
 		if(n<0)
@@ -27,7 +28,7 @@ class Factor
 				return false;
 			}
 		}
-		return true;
+		return true;	
 	}
 }
 
@@ -37,7 +38,6 @@ public class PrimeFactors
 	{
 		System.out.println("Enter the prime factors sum");
 		int num=Utility.number();
-		Factor.primorial(num);
-		
+		Factor.primorial(num);	
 	}
 }

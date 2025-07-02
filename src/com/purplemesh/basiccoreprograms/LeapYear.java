@@ -1,11 +1,10 @@
 package com.purplemesh.basiccoreprograms;
 
 import com.purplemesh.utility.Utility;
-
-public class LeapYear
+class Leap
 {
 	
-	public static String leapYear(String year)
+	public String leapYear(String year)
 	{
 		try
 		{
@@ -24,11 +23,15 @@ public class LeapYear
             return "Invalid input=> Please enter a numeric year only.";
 		}
 	}
-	
-	public static void main(String[] args) {
+}
+class LeapYear
+{
+	public static void main(String[] args)
+	{
+		Leap l=new Leap();
 		System.out.println("Enter a year");
 		String year=Utility.getNameReplace();
-		String res=leapYear(year);
+		String res=l.leapYear(year);
 		System.out.println(res);
 	}
 

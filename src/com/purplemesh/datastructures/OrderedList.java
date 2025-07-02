@@ -100,7 +100,7 @@ public class OrderedList {
                 System.out.println(userNumber + " was not found and has been inserted.");
             }
 
-            // Write back to file after every update
+            
             try (PrintWriter writer = new PrintWriter(new FileWriter(inputFile))) {
                 writer.println(list);
                 System.out.println("List updated and saved to file.");

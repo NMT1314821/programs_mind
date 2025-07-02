@@ -3,8 +3,7 @@ package com.purplemesh.algorithmprograms;
 import java.util.*;
 
 public class StringPermutations {
-
-    // Recursive method to generate permutations
+	
     public static List<String> permutationsRecursive(String str) {
         List<String> result = new ArrayList<>();
         permuteHelper(str.toCharArray(), 0, result);
@@ -29,7 +28,6 @@ public class StringPermutations {
         arr[j] = temp;
     }
 
-    // Iterative method to generate permutations using Heap's algorithm
     public static List<String> permutationsIterative(String str) {
         List<String> result = new ArrayList<>();
         char[] arr = str.toCharArray();
@@ -56,12 +54,11 @@ public class StringPermutations {
         return result;
     }
 
-    // Method to check if two Lists contain the same elements (order-independent)
     public static boolean arePermutationListsEqual(List<String> list1, List<String> list2) {
-        if (list1.size() != list2.size()) {
+        if (list1.size() != list2.size())
+        {
             return false;
         }
-        // Sort both lists and compare
         List<String> sorted1 = new ArrayList<>(list1);
         List<String> sorted2 = new ArrayList<>(list2);
         Collections.sort(sorted1);

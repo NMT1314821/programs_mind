@@ -29,6 +29,7 @@ class LinkedList<T> {
             }
             temp.next = newNode;
         }
+
     }
     
     public boolean removeNode(T data) {
